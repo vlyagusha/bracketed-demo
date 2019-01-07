@@ -1,0 +1,28 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+use Bracketed\Resolver;
+
+set_time_limit(0);
+
+/** @var \Composer\Autoload\ClassLoader $loader */
+$loader = require __DIR__ . '/../vendor/autoload.php';
+
+echo 'Введите имя файла со строкой:' . PHP_EOL;
+$filename = readline();
+if (!file_exists($filename) || !is_file($filename)) {
+    throw new InvalidArgumentException('Файл ' . $filename . ' не найден');
+}
+$string = file_get_contents($filename);
+$resolver = new Resolver();
+try {
+    if ($resolver->isCorrect($string)) {
+        echo 'Строка корректна' . PHP_EOL;
+    } else {
+        echo 'Строка некорректна' . PHP_EOL;
+    }
+} catch (InvalidArgumentException $exception) {
+    echo 'Строка содержит недопустимые символы: ' . $exception->getMessage() . PHP_EOL;
+}

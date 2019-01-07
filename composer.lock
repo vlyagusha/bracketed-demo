@@ -1,0 +1,58 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "799b225349b039908ec4ad5ce033200e",
+    "packages": [
+        {
+            "name": "vlyagusha/bracketed",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vlyagusha/bracketed.git",
+                "reference": "402d099e0bb70d78f34d7b5ebf8be12b255838a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vlyagusha/bracketed/zipball/402d099e0bb70d78f34d7b5ebf8be12b255838a7",
+                "reference": "402d099e0bb70d78f34d7b5ebf8be12b255838a7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bracketed\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Vyacheslav Lyagusha",
+                    "email": "vlyagusha@gmail.com"
+                }
+            ],
+            "description": "Library to solve bracket problem",
+            "time": "2019-01-07T12:49:47+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "vlyagusha/bracketed": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.1.0"
+    },
+    "platform-dev": []
+}

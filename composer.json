@@ -1,0 +1,15 @@
+{
+  "name": "vlyagusha/bracketed-demo",
+  "description": "Demo programm for demonstration bracketed repo",
+  "license": "LGPL",
+  "authors": [
+    {
+      "name": "Vyacheslav Lyagusha",
+      "email": "vlyagusha@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.0",
+    "vlyagusha/bracketed": "dev-master"
+  }
+}
